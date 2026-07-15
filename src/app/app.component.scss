@@ -1,0 +1,227 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-color-50);
+  width: 100vw;
+  height: 120px;
+  &-container {
+    display: flex;
+    flex-direction: row;
+    width: 1180px;
+    height: 60px;
+    margin: 30px auto;
+    gap: 130px;
+    align-items: center;
+    font-weight: 600;
+    .header-logo {
+      width: 143px;
+      height: 61px;
+    }
+
+    .header-link {
+      text-decoration: none;
+      color: var(--white-color);
+      font-weight: 700;
+    }
+    
+    .nav-header {
+      display: inherit;
+      gap: 24px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .consult-header-btn {
+      width: 158px;
+      height: 44px;
+      gap: 10px;
+      border-radius: 4px;
+      padding: 12px 24px;
+      color: var(--secondary-color);
+      background-color: var(--white-color);
+      box-shadow: none;
+      cursor: pointer;
+    }
+  }
+  
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 431px auto 82px; 
+  max-width: 1180px;
+  &-mountains {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("/images/header-mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 985px;
+    z-index: -1;
+  }
+
+  &-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1080px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.5;
+    letter-spacing: 0.02;
+    text-transform: uppercase;
+    color: var(--white-color);
+    word-wrap: break-word;
+  }
+
+  .tour-selector {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 1180px;
+    height: 161px;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 10px;
+    gap: 24px;
+    margin-top: 42px;
+
+    .btn-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 42px 40px;
+      .option {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+        .btn{
+          display: flex;
+          text-align: center;
+          justify-content: space-between;
+          gap: 8px;
+          width: 270px;
+          height: 52px;
+          border: 1px solid var(--white-color);
+          border-radius: 8px;
+          cursor: pointer;
+          background: transparent;
+          color: var(--white-color);
+          padding:  14px 16px;
+
+          .hero-img {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+          }
+        }
+        .label {
+          text-align: left;
+          color: var(--white-color);
+        }
+      }
+      .consult-btn {
+        font-weight: 700;
+        width: 213px;
+        height: 52px;
+        line-height: 20px;
+        letter-spacing: 1.2;
+        background-color: var(--secondary-color);
+        border-radius: 4px;
+        color: var(--white-color);
+        cursor: pointer;
+        border: none;
+      }
+    }
+  }
+}
+
+.info-block {
+  max-width: 1180px;
+  height: 526px;
+  position: relative;
+  margin: 200px auto;
+  .img-info-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 400px;
+    background-image: url("/images/mountain-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+    background-position: center;
+  }
+  .img-info-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 130px;
+    top: 126px;
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    background-image: url("/images/hike-front.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+    z-index: 1;
+
+    .play-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1em;
+      height: 1em;
+      padding: 25px;
+      border-radius: 100px;
+      background-color: rgba(253, 253, 253, 0.6);
+      z-index: 2;
+      border: 1px solid var(--white-color);
+      border-image: none;
+      cursor: pointer ;
+    }
+  }
+  .media-info {
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    height: 398px;
+    margin: 64px 0 64px auto;
+    gap: 40px;
+    .aboutHikeSubtitle {
+      font-size: 24px;
+      color: rgba(242, 190, 34, 1);
+      margin-bottom: 8px;
+    }
+    .aboutHikeTitle {
+      font-size: 32px;
+      line-height: 1.2;
+      color: var(--dark-color);
+    }
+    .aboutHike {
+      color: var(--dark-color);
+      line-height: 1.5;
+    }
+    .hike-program-btn {
+      width: 200px;
+      height: 52px;
+      padding: 16px 16px;
+      background-color: var(--secondary-color);
+      color: var(--white-color);
+      margin-top: auto;
+      margin-right: auto;
+      cursor: pointer;
+    }
+  }
+}
