@@ -51,7 +51,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 431px auto 82px; 
+  margin: 431px auto 0; 
+  padding-bottom: 82px;
   max-width: 1180px;
   &-mountains {
     position: absolute;
@@ -146,9 +147,8 @@
 
 .info-block {
   max-width: 1180px;
-  height: 526px;
   position: relative;
-  margin: 200px auto;
+  margin: 100px auto;
   .img-info-back {
     position: absolute;
     top: 0;
