@@ -6,6 +6,25 @@
   background-color: var(--dark-color-50);
   width: 100vw;
   height: 120px;
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 143px;
+    height: 61px;
+  }
+  .logo-company {
+    width: 138px;
+    height: 29px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .name-company {
+    letter-spacing: 6.4px;
+    text-decoration: none;
+    color: var(--white-color);
+  }
   &-container {
     display: flex;
     flex-direction: row;

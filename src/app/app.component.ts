@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  nameCompany = "РУТИМБЕТ";
+  nameCompany = "РУМТИБЕТ";
   heroTitle = "Насладись прогулкой в горах с командой единомышленников";
   aboutHikeSubtitle = "о нашем походе";
   aboutHikeTitle = "Исследуйте все горные массивы мира вместе с нами";
