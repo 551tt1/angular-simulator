@@ -1,1 +1,68 @@
-<h1 style="display: flex; justify-content: center; font-family: sans-serif;">NGX SIMULATOR</h1>
+<header class="header">
+  <div class="header-container">
+    <span class="logo">
+      <img src="/images/header-logo.png" alt="логотип" width="138px" height="29px">
+      <a class="name-company fw-700 fs-16" href="">{{nameCompany}}</a>
+    </span>
+    <nav class="nav-header fs-18 fw-600">
+      <a class="header-link " href="">Главная</a>
+      <a class="header-link" href="">Про гида</a>
+      <a class="header-link" href="">Программа тура</a>
+      <a class="header-link" href="">Стоимость</a>
+      <a class="header-link" href="">Блог</a>
+      <a class="header-link" href="">Контакты</a>
+    </nav>
+    <button class="consult-header-btn fs-16 fw-600">Консультация</button>
+  </div>
+</header>
+<div class="hero">
+  <div class="hero-mountains"></div>
+
+  <div class="hero-text">{{ heroTitle }}</div>
+
+  <div class="tour-selector">
+    <div class="btn-wrapper">
+      <div class="option">
+        <button class="btn">
+          Локация для тура
+          <img class="hero-img" src="/images/arrow-down.png" alt="Календарь">
+        </button>
+        <span class="label fs-14">выберите из списка</span>
+      </div>
+      <div class="option">
+        <button class="btn">
+          Дата похода
+          <img class="hero-img" src="/images/date.svg" alt="Стрелка">
+        </button>
+        <span class="label fs-14">укажите дату</span>
+      </div>
+      <div class="option">
+        <button class="btn">
+          Участники
+          <img class="hero-img" src="/images/arrow-down.png" alt="Стрелка">
+        </button>
+        <span class="label fs-14">выберите из списка</span>
+      </div>
+      <button class="consult-btn fs-16" type="submit">Найти программу</button>
+    </div>
+  </div>
+</div>
+
+<div class="info-block">
+  <div class="img-info-back"></div>
+  <div class="img-info-front">
+    <button class="play-btn">
+      <img src="/images/play.svg" alt="play button">
+    </button>
+  </div>
+
+  <div class="media-info">
+    <div class="title">
+      <p class="aboutHikeSubtitle fw-400">{{aboutHikeSubtitle}}</p>
+      <p class="aboutHikeTitle fw-800">{{aboutHikeTitle}}</p>
+    </div>
+    <p class="aboutHike fs-18 fw-400">{{aboutHike}}</p>
+    <button class="hike-program-btn fs-16 fw-600">Программа тура</button>
+  </div>
+
+</div>
